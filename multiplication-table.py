@@ -1,7 +1,7 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Noah Pikielny
+Credit: Adam Glueck - https://github.com/adamglueck/Multiplication-table/blob/master/multiplication-table.py#L17 - for his .join method
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -21,3 +21,11 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
+#width = int(input("Width of multiplication table: "))
+#height = int(input("Height of multiplication table: "))
+w = 10
+h = 10
+for i in range(1, h + 1):
+    row = list(k * i for k in range(1,w + 1))
+    rowFinal = " ".join(str(g) for g in row)
+    print(rowFinal[:])
